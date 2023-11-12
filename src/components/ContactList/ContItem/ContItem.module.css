@@ -15,13 +15,15 @@
   }
   
   
-  
   .name {
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-weight: 600;
   }
   
   .number {
     margin-top: 5px;
+    margin-bottom: 5px;
     font-weight: 700;
   }
   
