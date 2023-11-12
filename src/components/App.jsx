@@ -1,7 +1,7 @@
 import { Component } from "react";
 import '../../src/index.css';
 import { ContactList } from "./ContactList/ContactList";
-
+import { ContactForm } from "./СontactForm/ContactForm";
 
 export  class App extends Component {
 
@@ -52,18 +52,18 @@ export  class App extends Component {
       return (
         <div className="container">
     
-    <div>
-      <h2 className="title">Phonebook</h2>
-      
-      {/* <Filter onChange={this.changeFilter} />
-      <ContactForm onAddContact={this.onAddContact}/> */}
-    </div>
-    <div>
-      <h2 className="title">Contacts</h2>
+          <div>
+            <h2 className="title">Phonebook</h2>
+            
+            {/* <Filter onChange={this.changeFilter} /> */}
+            <ContactForm onAddContact={this.onAddContact}/>
+          </div>
+          <div>
+            <h2 className="title">Contacts</h2>
 
-      <ContactList contacts={contacts} deleteContact={this.deleteContact} />
-    </div>
-  </div>
+            <ContactList contacts={contacts} deleteContact={this.deleteContact} />
+          </div>
+        </div>
       )
   }
 }
